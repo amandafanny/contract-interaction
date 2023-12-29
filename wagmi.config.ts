@@ -14,6 +14,11 @@ export default defineConfig([
       foundry({
         project: "/Users/yuqing/ghj/code/github/wrap/wrap",
         include: ["IERC7527Factory.sol/IERC7527Factory.json"],
+        deployments: {
+          IERC7527Factory: {
+            5: "0xCB3fE2C38c978288F009c52aB443885A402A829E",
+          },
+        },
       }),
       react({
         // useContractItemEvent: false,
@@ -27,6 +32,11 @@ export default defineConfig([
       foundry({
         project: "/Users/yuqing/ghj/code/github/wrap/deployer",
         include: ["Deployer.sol/Deployer.json"],
+        deployments: {
+          Deployer: {
+            5: "0xc02081a5f80C7FdaA28cF26a40f5aBAe21f20763",
+          },
+        },
       }),
       react({
         // useContractItemEvent: false,

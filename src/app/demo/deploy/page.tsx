@@ -19,7 +19,6 @@ const Demo = () => {
   const signature = getFunctionSignature(ierc7527FactoryABI[0]);
   console.log("signature", signature);
   const { config, error } = usePrepareIerc7527FactoryDeployWrap({
-    address: "0xCB3fE2C38c978288F009c52aB443885A402A829E",
     args: [
       {
         implementation: "0xb4972cc5D57cDE9fE905Fa2CEA9e8DbC1749d8E8",
